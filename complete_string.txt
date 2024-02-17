@@ -1,0 +1,15 @@
+al=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','z']
+T=int(input())
+f=False
+while T>0:
+    string=input()
+    for i in range(len(al)):
+        if al[i] in string:
+            f=True
+        else:
+            print("NO")
+            f=False
+            break
+    if f:
+        print("YES")
+    T-=1
