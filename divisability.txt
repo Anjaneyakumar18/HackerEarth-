@@ -1,0 +1,7 @@
+n=int(input())
+arr=list(map(int,input().split()))
+ele=arr[n-1]
+if ele%10==0:
+    print("Yes")
+else:
+    print("No")

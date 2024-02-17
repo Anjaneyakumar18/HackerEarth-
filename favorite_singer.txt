@@ -1,0 +1,14 @@
+def count_favorite_singers(songs):
+    singer_count = {}
+    for singer in songs:
+        if singer in singer_count:
+            singer_count[singer] += 1
+        else:
+            singer_count[singer] = 1
+    max_count = max(singer_count.values())
+    favorite_singers_count = sum(1 for count in singer_count.values() if count == max_count) 
+    return favorite_singers_count
+n = int(input())  
+songs = list(map(int, input().split()))  
+result = count_favorite_singers(songs)
+print(result)

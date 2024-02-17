@@ -1,0 +1,11 @@
+ins=[int(x) for x in input().split()]
+l=ins[0]
+r=ins[1]
+k=ins[2]
+li=[]
+for i in range(l,r+1):
+    if i%k==0:
+        li.append(i)
+    else:
+        continue
+print(len(li))

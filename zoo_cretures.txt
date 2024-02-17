@@ -1,0 +1,8 @@
+import math
+T=int(input())
+for i in range(T):
+    a=[int(x) for x in input().split()]
+    lcm=math.lcm(a[0],a[1])
+    c1=int(lcm/a[0])
+    c2=int(lcm/a[1])
+    print(c1,c2)

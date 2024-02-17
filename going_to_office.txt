@@ -1,0 +1,11 @@
+d=int(input())
+o=[int(x) for x in input().split()]
+c=[int(x) for x in input().split()]
+online=o[0]+(d-o[1])*o[2]
+classic=c[1]+((d/c[0])*c[2])+(d*c[3])
+if(online<classic):
+    print("Online Taxi")
+elif(classic<online):
+    print("Classic Taxi")
+else:
+    print("Online Taxi")

@@ -1,0 +1,16 @@
+n=int(input())
+for i in range(n):
+    l=list(map(int,input().split()))
+    low=min(l[0],l[1])
+    high=max(l[0],l[1])
+    k=int(input())
+    gsum=0
+    psum=0
+    for j in range(k):
+        p=list(map(int,input().split()))
+        gsum+=p[0]
+        psum+=p[1]
+    if gsum>psum:
+        print((gsum*low)+(psum*high))
+    else:
+        print((gsum*high)+(psum*low))

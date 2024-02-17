@@ -1,0 +1,25 @@
+t = int(input())
+for _ in range(t):
+    n = int(input())
+    s1 = list(input())
+    s2 = list(input())
+    f = False
+    char_count = {}
+    co = s1.count('?')
+
+    for char in s1:
+        char_count[char] = char_count.get(char, 0) + 1
+
+    for i in range(n):
+        if char_count.get(s2[i], 0) > 0:
+            char_count[s2[i]] -= 1
+        elif co > 0:
+            co -= 1
+        else:
+            f = True
+            break
+
+    if f:
+        print('No')
+    else:
+        print('Yes')

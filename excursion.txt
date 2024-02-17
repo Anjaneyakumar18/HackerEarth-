@@ -1,0 +1,10 @@
+import math
+t=int(input())
+l=[]
+for i in range(t):
+    T=[int(x) for x in input().split()]
+    rfb=math.ceil(T[0]/T[2])
+    rfg=math.ceil(T[1]/T[2])
+    l.append(rfb+rfg)
+for i in range(len(l)):
+    print(l[i])

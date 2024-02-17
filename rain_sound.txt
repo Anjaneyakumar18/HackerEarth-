@@ -1,0 +1,14 @@
+import math
+T=int(input())
+while T>0:
+    l,r,s=map(int,input().split())
+    if s>r:
+        print(-1,-1)
+    else:
+        min=math.ceil(l/s)
+        max=r//s
+        if min>max:
+            print(-1,-1)
+        else:
+            print(min,max)
+    T-=1

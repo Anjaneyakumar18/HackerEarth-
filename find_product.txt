@@ -1,0 +1,7 @@
+n=int(input())
+nums=[int(i) for i in input().split()]
+pro=1
+mc=(10**9)+7
+for i in range(len(nums)):
+    pro=(pro*nums[i])%mc
+print(pro)

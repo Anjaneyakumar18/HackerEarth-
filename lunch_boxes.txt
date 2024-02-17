@@ -1,0 +1,13 @@
+T=int(input())
+for i in range(T):
+    box,school=map(int,input().split())
+    a=[int(x) for x in input().split()]
+    a.sort()
+    count=0
+    summ=0
+    for i in range(len(a)):
+        if summ+a[i]<=box:
+            summ+=a[i]
+            count+=1
+    print(count)
+

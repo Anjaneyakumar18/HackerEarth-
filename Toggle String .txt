@@ -1,0 +1,10 @@
+string=input()
+rs=''
+for i in range(len(string)):
+    if string[i].isupper():
+        u=string[i].lower()
+        rs+=u
+    elif string[i].islower():
+        l=string[i].upper()
+        rs+=l
+print(rs)
